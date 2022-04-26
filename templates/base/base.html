@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'assets/css/_header.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/_footer.css'%}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css'%}">
+    <title>Accueil</title>
+</head>
+<body>
+    
+    <header>            
+        <div class="logos">
+            <img src="{% static 'assets/img/Logo/logo1.png' %}" alt="logo1">
+            <img src="{% static 'assets/img/Logo/logo2.png' %}" alt="logo2">
+            <img src="{% static 'assets/img/Logo/logo3.png' %}" alt="logo3">
+        </div>
+        <nav>
+            <ul>
+                <a href="#">
+                    <li>Accueil</li>
+                </a>
+                <a href="pages/opponents.html">
+                    <li>Adversaires</li>
+                </a>
+                <a href="pages/heros.html">
+                    <li>Héros</li>
+                </a>
+                <a href="pages/about.html">
+                    <li>A propos</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    {% block content %}
+    {% endblock content %}
+
+
+    <footer>
+        <div class="block-footer">
+            <div class="block">
+                <ul>
+                    <li>Mobile app</li>
+                    <li>Politique de confifentialité</li>
+                    <li>Cookies</li>
+                </ul>
+            </div>
+            <div class="block-logo">
+                <img src="{% static 'assets/img/Logo/logo1.png' %}" alt="logo1">
+                <img src="{% static 'assets/img/Logo/logo2.png' %}" alt="logo2">
+                <img src="{% static 'assets/img/Logo/logo3.png' %}" alt="logo3">
+            </div>
+            <div class="block-contact">
+                <ul>
+                    <li>Contact</li>
+                    <li>Blog</li>
+                    <li>
+                        <select id="langue">
+                            <option value="langue" selected>Langue</option>
+                            <option value="fr">Français</option>
+                            <option value="eng">Anglais</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="{% static 'assets/img/Logo/logof.png'%}" alt="logo facebook">
+            <img src="{% static 'assets/img/Logo/logoi.png'%}" alt="logo instagram">
+            <img src="{% static 'assets/img/Logo/logoy.png'%}" alt="logo youtube">
+            <img src="{% static 'assets/img/Logo/logot.png'%}" alt="logo twitter">
+        </div>
+        <div class="copyrights">
+            <p>
+                &#9426; SaynaXMarvel, Inc. 2022. We love our users!
+            </p>
+        </div>
+    </footer>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+</html>

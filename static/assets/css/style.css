@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+
+.container-hero{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.container-hero h1{
+    font-family: 'Russo One', sans-serif
+}
+
+/* bouton */
+.btn-hero{
+    border-radius: 10px;
+    padding: 10px 8px;
+    border: none;
+}
+
+.hero{
+    background-color: #fff;
+    color:  #b11313;
+    margin-right: 15px;
+}
+
+.adversaire{
+    background-color: transparent;
+    color:  #fff;
+    border: 1px solid #fff;
+}
+
+
+
+/* section-hero */
+.section-hero{
+    height: 90vh;
+    width: 100vw;
+}
+
+
+/* section-cine */
+.section-cine{
+    height: 100vh;
+    width: auto;
+    background-color: #b11313;
+}

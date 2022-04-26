@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #b11313;
+    padding: 10px 60px;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+}
+
+.logos img {
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-right: 40px;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: double;
+}
